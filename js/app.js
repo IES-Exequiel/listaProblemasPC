@@ -2,12 +2,14 @@ let listaPC = [];
 
 const procesarFormulario = (event) => {
     event.preventDefault();
-    let number = document.getElementById("number").value;
+    let numero = Number(document.getElementById("number").value);
     let problema = document.getElementById("problema").value;
     let objeto = {
-        "Numero PC": number,
+        "Numero PC": numero,
         "Problema": problema
     }
+    numero.value = "";
+    problema.value = "";
     listaPC.push(objeto);
     let tbody = document.getElementById("tbody");
     tbody.innerHTML = "";

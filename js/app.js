@@ -2,7 +2,7 @@ let listaPC = [];
 
 const procesarFormulario = (event) => {
     event.preventDefault();
-    let numero = Number(document.getElementById("number").value);
+    let numero = Number(document.getElementById("numero").value);
     let problema = document.getElementById("problema").value;
     let objeto = {
         "Numero PC": numero,
